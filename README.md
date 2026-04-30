@@ -1,5 +1,8 @@
 # CS1400: 7-Segment Display Decoder Final Project
 
+- [Truth Table](./truth-table.md)
+- [K-Maps](./k-maps.md)
+
 A combinational logic circuit that decodes a 3-bit input into four distinct digits — displayed on a 7-segment output — designed and simulated in Logisim-Evolution.
 
 ## Overview
@@ -16,7 +19,7 @@ This project demonstrates the foundational hardware design process that underlie
 
 ## Digits Decoded
 
-| X | Y | Z | Digit Displayed |
+|  X  |  Y  |  Z  | Digit Displayed |
 | :-: | :-: | :-: | :-------------: |
 |  0  |  0  |  0  |        n        |
 |  0  |  0  |  1  |        6        |
@@ -52,15 +55,16 @@ One K-map was constructed per output segment (a through g). Don't-care condition
 
 | Segment | Simplified Expression |
 | :-----: | :-------------------- |
-| a | X'Y + X'Z |
-| b | X'Y |
-| c | X' |
-| d | Y'Z |
-| e | X'(Y' + Z') |
-| f | X'(Y + Z) |
-| g | 1 (always ON) |
+|    a    | X'Y + X'Z             |
+|    b    | X'Y                   |
+|    c    | X'                    |
+|    d    | Y'Z                   |
+|    e    | X'(Y' + Z')           |
+|    f    | X'(Y + Z)             |
+|    g    | 1 (always ON)         |
 
 **Key observations:**
+
 - Segment **g** is always ON → hardwired to logic HIGH, no gate needed
 - Segment **c** = X' → requires only a single NOT gate
 - Segment **b** = X'Y → requires one AND gate (with X inverted)
