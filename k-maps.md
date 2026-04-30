@@ -1,78 +1,114 @@
-# K-Maps
+# Karnaugh Maps
 
-## Segment `a`
+A Karnaugh map is a diagram used to simplify Boolean algebra expressions [^1]. This project required constructing a K-map for each segment of the output display.
 
-| Segment A |  Z  | Z'  |
-| :-------: | :-: | :-: |
-|   X'Y'    |  1  |  0  |
-|    X'Y    |  1  |  1  |
-|    XY     |  0  |  0  |
-|    XY'    |  0  |  0  |
+## Segment A
 
-> Expression: `X'Y + X'Z`
+| **Segment A** | Z   | Z'  |
+| :------------ | :-- | :-- |
+| **X'Y'**      | `1` | `0` |
+| **X'Y**       | `1` | `1` |
+| **XY**        | `0` | `0` |
+| **XY'**       | `0` | `0` |
 
-## Segment `b`
+### Boolean Expression
 
-| Segment B |  Z  | Z'  |
-| :-------: | :-: | :-: |
-|   X'Y'    |  0  |  0  |
-|    X'Y    |  1  |  1  |
-|    XY     |  0  |  0  |
-|    XY'    |  0  |  0  |
+$
+X'Y + X'Z
+$
 
-> Expression: `X'Y`
+## Segment B
 
-## Segment `c`
+| **Segment B** | Z   | Z'  |
+| :------------ | :-- | :-- |
+| **X'Y'**      | `0` | `0` |
+| **X'Y**       | `1` | `1` |
+| **XY**        | `0` | `0` |
+| **XY'**       | `0` | `0` |
 
-| Segment C |  Z  | Z'  |
-| :-------: | :-: | :-: |
-|   X'Y'    |  1  |  1  |
-|    X'Y    |  1  |  1  |
-|    XY     |  0  |  0  |
-|    XY'    |  0  |  0  |
+### Boolean Expression
 
-> Expression: `X'`
+$
+X'Y
+$
 
-## Segment `d`
+## Segment C
 
-| Segment D |  Z  | Z'  |
-| :-------: | :-: | :-: |
-|   X'Y'    |  1  |  0  |
-|    X'Y    |  0  |  0  |
-|    XY     |  0  |  0  |
-|    XY'    |  0  |  0  |
+| **Segment C** | Z   | Z'  |
+| :------------ | :-- | :-- |
+| **X'Y'**      | `1` | `1` |
+| **X'Y**       | `1` | `1` |
+| **XY**        | `0` | `0` |
+| **XY'**       | `0` | `0` |
 
-> Expression: `Y'Z`
+### Boolean Expression
 
-## Segment `e`
+$
+X'
+$
 
-| Segment E |  Z  | Z'  |
-| :-------: | :-: | :-: |
-|   X'Y'    |  1  |  1  |
-|    X'Y    |  0  |  1  |
-|    XY     |  0  |  0  |
-|    XY'    |  0  |  0  |
+## Segment D
 
-> Expression: `X'(Y'+Z')`
+| **Segment D** | Z   | Z'  |
+| :------------ | :-- | :-- |
+| **X'Y'**      | `1` | `0` |
+| **X'Y**       | `0` | `0` |
+| **XY**        | `0` | `0` |
+| **XY'**       | `0` | `0` |
 
-## Segment `f`
+### Boolean Expression
 
-| Segment F |  Z  | Z'  |
-| :-------: | :-: | :-: |
-|   X'Y'    |  1  |  0  |
-|    X'Y    |  1  |  1  |
-|    XY     |  0  |  0  |
-|    XY'    |  0  |  0  |
+$
+Y'Z
+$
 
-> Expression: `X'(Y+Z)`
+## Segment E
 
-## Segment `g`
+| **Segment E** | Z   | Z'  |
+| :------------ | :-- | :-- |
+| **X'Y'**      | `1` | `1` |
+| **X'Y**       | `0` | `1` |
+| **XY**        | `0` | `0` |
+| **XY'**       | `0` | `0` |
 
-| Segment G |  Z  | Z'  |
-| :-------: | :-: | :-: |
-|   X'Y'    |  1  |  1  |
-|    X'Y    |  1  |  1  |
-|    XY     |  1  |  1  |
-|    XY'    |  1  |  1  |
+### Boolean Expression
 
-> Expression: `G = 1`
+$
+X'(Y' + Z')
+$
+
+## Segment F
+
+| **Segment F** | Z   | Z'  |
+| :------------ | :-- | :-- |
+| **X'Y'**      | `1` | `0` |
+| **X'Y**       | `1` | `1` |
+| **XY**        | `0` | `0` |
+| **XY'**       | `0` | `0` |
+
+### Boolean Expression
+
+$
+X'(Y + Z)
+$
+
+## Segment G
+
+| **Segment G** | Z   | Z'  |
+| :------------ | :-- | :-- |
+| **X'Y'**      | `1` | `1` |
+| **X'Y**       | `1` | `1` |
+| **XY**        | `1` | `1` |
+| **XY'**       | `1` | `1` |
+
+### Boolean Expression
+
+$
+G = 1
+$
+
+---
+
+### References
+
+[^1]: https://en.wikipedia.org/wiki/Karnaugh_map
