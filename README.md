@@ -1,9 +1,4 @@
----
-layout: default
-title: Overview
----
-
-# 7-Segment Display Decoder - CS1400
+# CS1400: 7-Segment Display Decoder Final Project
 
 A combinational logic circuit that decodes a 3-bit input into four distinct digits — displayed on a 7-segment output — designed and simulated in Logisim-Evolution.
 

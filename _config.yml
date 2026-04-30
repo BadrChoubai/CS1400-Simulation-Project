@@ -1,5 +1,15 @@
-title: "CS-1400 Simulation Project"
-description: "Computer Organization Course Final Project"
+title: "CS1400-Simulation-Project"
+description: "Final Project for Computer Organization Course"
 url: "https://badrchoubai.github.io"
-baseurl: "/"
+baseurl: "/CS1400-Simulation-Project"
 author: "Badr Choubai"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
