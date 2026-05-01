@@ -6,7 +6,7 @@ A combinational logic circuit that decodes a 3-bit input into four distinct digi
 
 - [Truth Table](./truth-table.md)
 - [K-Maps](./k-maps.md)
-- [Logisim Circuit](./circuit.md)
+- [Logisim Circuits](./circuit.md)
 
 ## Overview
 
@@ -46,13 +46,6 @@ This project demonstrates the foundational hardware design process that underlie
 > ### Combinational Circuit
 >
 > The simplified Boolean expressions were implemented in **Logisim-Evolution** using AND, OR, and NOT gates. The circuit takes three input pins (X, Y, Z), routes them through the gate logic derived from the K-maps, and drives a 7-segment display component directly. [Read More](./circuit.md)
-
-## Running the Circuit
-
-1. Install [Logisim-Evolution](https://github.com/logisim-evolution/logisim-evolution/releases)
-2. Open `files/decoder.circ`
-3. Toggle the input pins (X, Y, Z) to cycle through the four digits
-4. Observe the 7-segment display update in real time
 
 ## Course Context
 

@@ -26,6 +26,6 @@ Each segment is driven by the Boolean expression derived from its K-map:
 - Segment `c` requires only a single NOT gate.
 - Segment `b` requires one AND gate with `X` inverted.
 
-## Download
+## View the Circuit Images
 
-[Download decoder.circ](./files/decoder.circ) to run the circuit in Logisim-Evolution.
+[View Images from Logisim-Evolution](./files/Segment Images.pdf)
