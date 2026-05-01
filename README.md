@@ -1,6 +1,6 @@
 # CS1400: 7-Segment Display Decoder Final Project
 
-A combinational logic circuit that decodes a 3-bit input into four distinct digits — displayed on a 7-segment output — designed and simulated in Logisim-Evolution.
+A combinational logic circuit that decodes a 3-bit input into four distinct digits, displayed on a 7-segment output, designed and simulated in Logisim-Evolution.
 
 **Deliverables**:
 
@@ -14,11 +14,11 @@ This project implements a custom decoder for four specific digits derived from a
 
 The design follows the full digital logic pipeline:
 
-1. **Truth table** — mapping every input combination to its required segment outputs
-2. **Karnaugh maps** — minimizing Boolean expressions for each of the 7 output signals
-3. **Combinational circuit** — implementing the simplified logic in Logisim-Evolution
+1. **Truth table**: mapping every input combination to its required segment outputs
+2. **Karnaugh maps**: minimizing Boolean expressions for each of the 7 output signals
+3. **Combinational circuit**: implementing the simplified logic in Logisim-Evolution
 
-This project demonstrates the foundational hardware design process that underlies every digital system — from calculators to CPUs.
+This project demonstrates the foundational hardware design process that underlies every digital system from calculators to CPUs.
 
 ## Digits Decoded
 
@@ -28,10 +28,10 @@ This project demonstrates the foundational hardware design process that underlie
 |  0  |  0  |  1  |        6        |
 |  0  |  1  |  0  |        9        |
 |  0  |  1  |  1  |        3        |
-|  1  |  0  |  0  |        —        |
-|  1  |  0  |  1  |        —        |
-|  1  |  1  |  0  |        —        |
-|  1  |  1  |  1  |        —        |
+|  1  |  0  |  0  |        -        |
+|  1  |  0  |  1  |        -        |
+|  1  |  1  |  0  |        -        |
+|  1  |  1  |  1  |        -        |
 
 ## Design Process
 
@@ -49,7 +49,7 @@ This project demonstrates the foundational hardware design process that underlie
 
 ## Course Context
 
-Built as a final project for a **Digital Logic Design** course. The assignment required applying truth tables, K-map minimization, and combinational circuit design to a real display decoding problem — core skills in computer engineering and embedded systems work.
+Built as a final project for a **Computer Organzation** course. The assignment required applying truth tables, K-map minimization, and combinational circuit design to a real display decoding problem.
 
 ## Skills Demonstrated
 
