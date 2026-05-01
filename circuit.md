@@ -29,6 +29,6 @@ Each segment is driven by the Boolean expression derived from its K-map:
 ## View the Circuit Images
 
 - [Download decoder.circ](./files/decoder.circ) to run the circuit in Logisim-Evolution.
-- [View images of segment logic](./.attachments/segments.png) if you don't want
+- [View images of segment logic](./files/segments.png) if you don't want
   to download and run it yourself
 
