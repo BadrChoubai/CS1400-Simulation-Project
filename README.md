@@ -6,8 +6,7 @@ A combinational logic circuit that decodes a 3-bit input into four distinct digi
 
 - [Truth Table](./truth-table.md)
 - [K-Maps](./k-maps.md)
-- [Logisim Circuit](./files/decoder.circ) - Clicking this link will download the
-  `.circ` file so you may run it in Logisim
+- [Logisim Circuit](./circuit.md)
 
 ## Overview
 
