@@ -32,6 +32,14 @@
         .skip-link:focus {
             top: 0;
         }
+
+        @media print {
+
+            #header,
+            #footer {
+                display: none;
+            }
+        }
     </style>
 
     <script>
@@ -48,15 +56,15 @@
 
 <body>
     <a class="skip-link" href="#content">Skip to main content</a>
-    <header class="container">
+    <header id="header" class="container">
         {% if page.url != "/" %} {% include nav.html %} {% endif %}
     </header>
     <main class="container" id="content">{{ content }}</main>
-    <footer class="container">
+    <footer id="footer" class="container">
         <small>
             Built by
             <a href="https://www.badrchoubai.dev">Badr Choubai</a> &mdash; for
-            Computer Organization 1400 with Ronald Bell
+            Computer Organization with Ronald Bell
         </small>
     </footer>
 </body>
